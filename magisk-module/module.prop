@@ -1,0 +1,6 @@
+id=idchanger-seed
+name=ID Changer (Seed Manager)
+version=v1.0
+versionCode=1
+author=notthei
+description=Generates and manages the random seed for the ID Changer LSPosed module. Install this alongside the APK.

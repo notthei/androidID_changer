@@ -1,0 +1,11 @@
+#!/sbin/sh
+# update-binary: Standard Magisk module installer stub
+# Magisk will call customize.sh automatically after this.
+
+SKIPUNZIP=1
+
+# Extract the module files
+unzip -o "$ZIPFILE" 'customize.sh' 'module.prop' -d "$MODPATH" >&2
+
+# Set permissions
+set_perm_recursive "$MODPATH" root root 0755 0644
