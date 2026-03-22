@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:label="@string/app_name"
+        android:allowBackup="false">
+
+        <!-- LSPosed module declaration -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Randomizes Android ID per app to prevent tracking" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+        <!--
+            xposedscope: "android" means we hook into the android system process.
+            Apps read android_id via SettingsProvider (system_server side),
+            but our hook targets the client side (each app's process).
+            Listing "android" here ensures system-level hooks also work if needed.
+        -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+
+    </application>
+
+</manifest>

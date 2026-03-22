@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Scope for LSPosed: list package names of apps this module hooks into.
+        Empty means ALL apps. You can restrict to specific packages here.
+        Example: <item>com.example.targetapp</item>
+    -->
+    <string-array name="xposed_scope">
+    </string-array>
+</resources>
