@@ -1,4 +1,8 @@
 # androidID_changer
+android_idをフックして別のIDに書き換えたい
+
+動かなそう
+
 
 
 ## 1.　apkインストール
